@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="asset/js/app.js"></script>
+    <script src="asset/js/app.js" defer></script>
 </head>
 <body>
     <h1>comparaison</h1>
+    <label for="number1">Entrez votre nombre 1</label>
+    <input type="number" id="numero1" required><br><br>
+    <label for="number2">Entrez votre nombre 2</label>
+    <input type="number" id="numero2" required><br><br>
+    <label for="number3">Entrez votre nombre 3</label>
+    <input type="number" id="numero3">
+    <button onclick="comparaison()">verifier</button>
+    <p id="affichage"></p>
 </body>
 </html>
