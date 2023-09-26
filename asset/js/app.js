@@ -3,13 +3,9 @@ function afficherTableMultiplication() {
 
   for (let i = 1; i <= 10; i++) {
     let resultat = entier * i;
-    let ul = document.createElement("ul");
-    let container = document.getElementById("container");
-    let li = document.createElement("li");
-    li.textcontent = resultat;
-    ul.appendChild(li);
-    container.appendChild(ul);
+    document.getElementById('container').innerHTML += `${resultat}<br>`
   }
+ 
  
 }
 const btn = document.querySelector("#btn");
