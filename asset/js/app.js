@@ -12,12 +12,12 @@ document.getElementById('Afficher').innerHTML = primeNumbers
 
 function isPrime(number) {
   let counter = 0
-  for(let i=1;i<=100;i++){
-    if (counter === 3){
-      return null
-    }
+  for(let i=1;i<=number;i++){
     if (number % i === 0){
       counter++
+    }
+    if (counter == 3){
+      return null
     }
   }
   return number
